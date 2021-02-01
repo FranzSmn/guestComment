@@ -1,0 +1,85 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.hero-image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  background: url(img/hero2.png) no-repeat center;
+  background-size: cover;
+}
+
+.greet {
+  text-align: right;
+}
+h1 {
+  color: white;
+  text-align: left;
+}
+h3 {
+  color: #2a2f2a;
+}
+p {
+  color: black;
+  text-align: left;
+  font-size: 13px;
+}
+
+.radio_input {
+  display: none;
+}
+
+.gymAttendant {
+  color: aqua;
+}
+
+.radio {
+  display: inline-flex;
+  overflow: hidden;
+  padding: 2px 2px;
+}
+
+.radio_label {
+  padding: 8px 14px;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #ffffff;
+  background: #61513a;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+.radio_label:not(:last-of-type) {
+  border-right: 1px solid #342c1e;
+}
+
+/* .radio_input:checked + .radio_label {
+  background: #342c1e;
+} */
+
+@media screen and (max-width: 450px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  .hero-sec {
+    width: 100%;
+  }
+  .hero-sec {
+    margin-top: 25%;
+  }
+  .headTitle {
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    padding: 3px;
+  }
+  .hero-image {
+    height: 230px;
+  }
+
+  .bodyForm {
+    align-items: center;
+  }
+}

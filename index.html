@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="hero-image">
+        <div class="hero-sec">
+            <h1 class="headTitle">We value your comments and suggestions</h1>
+        </div>
+    </div>
+
+    <form class= "formBody" id="guestSurveyForm">
+        <div class="dateOfStay row">
+            <p class="greet">
+                We want you to be part of our goal which is to improve the quality of our
+                services and facilities. We would appreciate very much a few minutes of
+                your time to fill up the form
+                </p>
+            <h3>Period of Stay</h3>
+            
+            <div class="fromStay">
+                <label for="dateStay">From: </label>
+                <input type="date" id="dateStay" />
+            </div>
+            <div class="toStay">
+            <label for="dateStay">To: </label>
+            <input type="date" id="dateStay" />
+            </div>
+        </div>
+
+<div class="bodyForm">
+<section>
+    <div class="hotelAssociate">
+    <div class="row">
+        <h3>Hotel Associate</h3>
+        <div>Front Desk Staff</div>
+        <div> 
+            <input class="radio_input" type="radio" value="Excellent" id="Excellent_front" name="radio_front">
+            <label class="radio_label" for="Excellent_front">Excellent</label>
+            <input class="radio_input" type="radio" value="Fair" id="Fair_front" name="radio_front">
+            <label class="radio_label" for="Fair_front">Fair</label>
+            <input class="radio_input" type="radio" value="Good" id="Good_front" name="radio_front">
+            <label class="radio_label" for="Good_front">Good</label>
+            <input class="radio_input" type="radio" value="Poor" id="Poor_front" name="radio_front">
+            <label class="radio_label" for="Poor_front">Poor</label>
+        </div>
+        <div>Bellman</div>
+        <div> 
+            <input class="radio_input" type="radio" value="Excellent" id="Excellent_bell" name="radio_bellman">
+            <label class="radio_label" for="Excellent_bell">Excellent</label>
+            <input class="radio_input" type="radio" value="Fair" id="Fair_bell" name="radio_bellman">
+            <label class="radio_label" for="Fair_bell">Fair</label>
+            <input class="radio_input" type="radio" value="Good" id="Good_bell" name="radio_bellman">
+            <label class="radio_label" for="Good_bell">Good</label>
+            <input class="radio_input" type="radio" value="Poor" id="Poor_bell" name="radio_bellman">
+            <label class="radio_label" for="Poor_bell">Poor</label>
+        </div>
+        <div class="">Lobby Guard</div>
+        <div class=" radio"> 
+            <input class="radio_input" type="radio" value="Excellent" id="Excellent_Guard" name="radio_guard">
+            <label class="radio_label" for="Excellent_Guard">Excellent</label>
+            <input class="radio_input" type="radio" value="Fair" id="Fair_Guard" name="radio_guard">
+            <label class="radio_label" for="Fair_Guard">Fair</label>
+            <input class="radio_input" type="radio" value="Good" id="Good_Guard" name="radio_guard">
+            <label class="radio_label" for="Good_Guard">Good</label>
+            <input class="radio_input" type="radio" value="Poor" id="Poor_Guard" name="radio_guard">
+            <label class="radio_label" for="Poor_Guard">Poor</label>
+        </div>
+        <div class="">Restaurant Assosciate</div>
+        <div class=" radio"> 
+            <input class="radio_input" type="radio" value="Excellent" id="Excellent_restau" name="radio_restau">
+            <label class="radio_label" for="Excellent_restau">Excellent</label>
+            <input class="radio_input" type="radio" value="Fair" id="Fair_restau" name="radio_restau">
+            <label class="radio_label" for="Fair_restau">Fair</label>
+            <input class="radio_input" type="radio" value="Good" id="Good_restau" name="radio_restau">
+            <label class="radio_label" for="Good_restau">Good</label>
+            <input class="radio_input" type="radio" value="Poor" id="Poor_restau" name="radio_restau">
+            <label class="radio_label" for="Poor_restau">Poor</label>
+        </div>
+        <div class="">Room Attendant</div>
+        <div class=" radio"> 
+            <input class="radio_input" type="radio" value="Excellent" id="Excellent_attendant" name="radio_attendant">
+            <label class="radio_label" for="Excellent_attendant">Excellent</label>
+            <input class="radio_input" type="radio" value="Fair" id="Fair_attendant" name="radio_attendant">
+            <label class="radio_label" for="Fair_attendant">Fair</label>
+            <input class="radio_input" type="radio" value="Good" id="Good_attendant" name="radio_attendant">
+            <label class="radio_label" for="Good_attendant">Good</label>
+            <input class="radio_input" type="radio" value="Poor" id="Poor_attendant" name="radio_attendant">
+            <label class="radio_label" for="Poor_attendant">Poor</label>
+        </div>
+        <div class="">Chauffeur</div>
+        <div class=" radio"> 
+            <input class="radio_input" type="radio" value="Excellent" id="Excellent_chauffeur" name="radio_chauffeur">
+            <label class="radio_label" for="Excellent_chauffeur">Excellent</label>
+            <input class="radio_input" type="radio" value="Fair" id="fair_chauffeur" name="radio_chauffeur">
+            <label class="radio_label" for="fair_chauffeur">Fair</label>
+            <input class="radio_input" type="radio" value="Good" id="Good_chauffeur" name="radio_chauffeur">
+            <label class="radio_label" for="Good_chauffeur">Good</label>
+            <input class="radio_input" type="radio" value="Poor" id="Poor_chauffeur" name="radio_chauffeur">
+            <label class="radio_label" for="Poor_chauffeur">Poor</label>
+        </div>
+        <div class="">Guest Services</div>
+        <div class=" radio"> 
+            <input class="radio_input" type="radio" value="Excellent" id="Excellent_Services" name="radio_services">
+            <label class="radio_label" for="Excellent_Services">Excellent</label>
+            <input class="radio_input" type="radio" value="Fair" id="Fair_Services" name="radio_services">
+            <label class="radio_label" for="Fair_Services">Fair</label>
+            <input class="radio_input" type="radio" value="Good" id="Good_Services" name="radio_services">
+            <label class="radio_label" for="Good_Services">Good</label>
+            <input class="radio_input" type="radio" value="Poor" id="Poor_Services" name="radio_services">
+            <label class="radio_label" for="Poor_Services">Poor</label>
+        </div>
+        <div class="">Gym Attendant</div>
+        <div class=" radio"> 
+            <input class="radio_input" type="radio" value="Excellent" id="Excellent_Gym" name="radio_gym">
+            <label class="radio_label" for="Excellent_Gym">Excellent</label>
+            <input class="radio_input" type="radio" value="Fair" id="Fair_Gym" name="radio_gym">
+            <label class="radio_label" for="Fair_Gym">Fair</label>
+            <input class="radio_input" type="radio" value="Good" id="Good_Gym" name="radio_gym">
+            <label class="radio_label" for="Good_Gym">Good</label>
+            <input class="radio_input" type="radio" value="Poor" id="Poor_Gym" name="radio_gym">
+            <label class="radio_label" for="Poor_Gym">Poor</label>
+        </div>
+    </div>
+    </div>
+</section>
+<section>
+    <div class="guestRelations">
+        <div class="row">
+            <h3>Staff and Guest Relations</h3>
+            <div class="">Staff courteousness</div>
+            <div class=" radio"> 
+                <input class="radio_input" type="radio" value="Excellent" id="Excellent_courteous" name="radio_courteous">
+                <label class="radio_label" for="Excellent_courteous">Excellent</label>
+                <input class="radio_input" type="radio" value="Fair" id="Fair_courteous" name="radio_courteous">
+                <label class="radio_label" for="Fair_courteous">Fair</label>
+                <input class="radio_input" type="radio" value="Good" id="Good_courteous" name="radio_courteous">
+                <label class="radio_label" for="Good_courteous">Good</label>
+                <input class="radio_input" type="radio" value="Poor" id="Poor_courteous" name="radio_courteous">
+                <label class="radio_label" for="Poor_courteous">Poor</label>
+            </div>
+            <div class="">Product Knowledge</div>
+            <div div class=" radio"> 
+                <input class="radio_input" type="radio" value="Excellent" id="Excellent_knowledge" name="radio_knowledge">
+                <label class="radio_label" for="Excellent_knowledge">Excellent</label>
+                <input class="radio_input" type="radio" value="Fair" id="Fair_knowledge" name="radio_knowledge">
+                <label class="radio_label" for="Fair_knowledge">Fair</label>
+                <input class="radio_input" type="radio" value="Good" id="Good_knowledge" name="radio_knowledge">
+                <label class="radio_label" for="Good_knowledge">Good</label>
+                <input class="radio_input" type="radio" value="Poor" id="Poor_knowledge" name="radio_knowledge">
+                <label class="radio_label" for="Poor_knowledge">Poor</label>
+            </div>
+            <div class="">Attentiveness</div>
+            <div class=" radio"> 
+                <input class="radio_input" type="radio" value="Excellent" id="Excellent_attentiveness" name="radio_attentiveness">
+                <label class="radio_label" for="Excellent_attentiveness">Excellent</label>
+                <input class="radio_input" type="radio" value="Fair" id="Fair_attentiveness" name="radio_attentiveness">
+                <label class="radio_label" for="Fair_attentiveness">Fair</label>
+                <input class="radio_input" type="radio" value="Good" id="Good_attentiveness" name="radio_attentiveness">
+                <label class="radio_label" for="Good_attentiveness">Good</label>
+                <input class="radio_input" type="radio" value="Poor" id="Poor_attentiveness" name="radio_attentiveness">
+                <label class="radio_label" for="Poor_attentiveness">Poor</label>
+            </div>
+            <div class="">Friendliness</div>
+            <div class=" radio"> 
+                <input class="radio_input" type="radio" value="Excellent" id="Excellent_friendliness" name="radio_friendliness">
+                <label class="radio_label" for="Excellent_friendliness">Excellent</label>
+                <input class="radio_input" type="radio" value="Fair" id="Fair_friendliness" name="radio_friendliness">
+                <label class="radio_label" for="Fair_friendliness">Fair</label>
+                <input class="radio_input" type="radio" value="Good" id="Good_friendliness" name="radio_friendliness">
+                <label class="radio_label" for="Good_friendliness">Good</label>
+                <input class="radio_input" type="radio" value="Poor" id="Poor_friendliness" name="radio_friendliness">
+                <label class="radio_label" for="Poor_friendliness">Poor</label>
+            </div>
+            <div class="">Helpfulness</div>
+            <div class=" radio"> 
+                <input class="radio_input" type="radio" value="Excellent" id="Excellent_helpfullness" name="radio_helpfullness">
+                <label class="radio_label" for="Excellent_helpfullness">Excellent</label>
+                <input class="radio_input" type="radio" value="Fair" id="Fair_helpfullness" name="radio_helpfullness">
+                <label class="radio_label" for="Fair_helpfullness">Fair</label>
+                <input class="radio_input" type="radio" value="Good" id="Good_helpfullness" name="radio_helpfullness">
+                <label class="radio_label" for="Good_helpfullness">Good</label>
+                <input class="radio_input" type="radio" value="Poor" id="Poor_helpfullness" name="radio_helpfullness">
+                <label class="radio_label" for="Poor_helpfullness">Poor</label>
+            </div>
+            <div class="">Grooming</div>
+            <div class=" radio"> 
+                <input class="radio_input" type="radio" value="Excellent" id="Excellent_grooming" name="radio_grooming">
+                <label class="radio_label" for="Excellent_grooming">Excellent</label>
+                <input class="radio_input" type="radio" value="Fair" id="fair_grooming" name="radio_grooming">
+                <label class="radio_label" for="fair_grooming">Fair</label>
+                <input class="radio_input" type="radio" value="Good" id="Good_grooming" name="radio_grooming">
+                <label class="radio_label" for="Good_grooming">Good</label>
+                <input class="radio_input" type="radio" value="Poor" id="Poor_grooming" name="radio_grooming">
+                <label class="radio_label" for="Poor_grooming">Poor</label>
+            </div>
+            <div class="">Check in process</div>
+            <div class=" radio"> 
+                <input class="radio_input" type="radio" value="Excellent" id="Excellent_checkin" name="radio_checkin">
+                <label class="radio_label" for="Excellent_checkin">Excellent</label>
+                <input class="radio_input" type="radio" value="Fair" id="Fair_checkin" name="radio_checkin">
+                <label class="radio_label" for="Fair_checkin">Fair</label>
+                <input class="radio_input" type="radio" value="Good" id="Good_checkin" name="radio_checkin">
+                <label class="radio_label" for="Good_checkin">Good</label>
+                <input class="radio_input" type="radio" value="Poor" id="Poor_checkin" name="radio_checkin">
+                <label class="radio_label" for="Poor_checkin">Poor</label>
+            </div>
+            <div class="">Reservation Efficiency</div>
+            <div class=" radio"> 
+                <input class="radio_input" type="radio" value="Excellent" id="Excellent_efficency" name="radio_efficency">
+                <label class="radio_label" for="Excellent_efficency">Excellent</label>
+                <input class="radio_input" type="radio" value="Fair" id="Fair_efficency" name="radio_efficency">
+                <label class="radio_label" for="Fair_efficency">Fair</label>
+                <input class="radio_input" type="radio" value="Good" id="Good_efficency" name="radio_efficency">
+                <label class="radio_label" for="Good_efficency">Good</label>
+                <input class="radio_input" type="radio" value="Poor" id="Poor_efficency" name="radio_efficency">
+                <label class="radio_label" for="Poor_efficency">Poor</label>
+            </div>
+            </div>
+        </section>
+        <section>
+            <div class="radio1">
+                <div class="row">
+                <h3>General Area</h3>
+                <div class="">Wi-fi Connection</div>
+                <div class=" radio"> 
+                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_wifi" name="radio_wifi">
+                    <label class="radio_label" for="Excellent_wifi">Excellent</label>
+                    <input class="radio_input" type="radio" value="Fair" id="Fair_wifi" name="radio_wifi">
+                    <label class="radio_label" for="Fair_wifi">Fair</label>
+                    <input class="radio_input" type="radio" value="Good" id="Good_wifi" name="radio_wifi">
+                    <label class="radio_label" for="Good_wifi">Good</label>
+                    <input class="radio_input" type="radio" value="Poor" id="Poor_wifi" name="radio_wifi">
+                    <label class="radio_label" for="Poor_wifi">Poor</label>
+                </div>
+                <div class="">Location</div>
+                <div class=" radio"> 
+                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_location" name="radio_location">
+                    <label class="radio_label" for="Excellent_location">Excellent</label>
+                    <input class="radio_input" type="radio" value="Fair" id="Fair_location" name="radio_location">
+                    <label class="radio_label" for="Fair_location">Fair</label>
+                    <input class="radio_input" type="radio" value="Good" id="Good_location" name="radio_location">
+                    <label class="radio_label" for="Good_location">Good</label>
+                    <input class="radio_input" type="radio" value="Poor" id="Poor_location" name="radio_location">
+                    <label class="radio_label" for="Poor_location">Poor</label>
+                </div>
+                <div class="">Room Comfort</div>
+                <div class=" radio"> 
+                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_comfort" name="radio_comfort">
+                    <label class="radio_label" for="Excellent_comfort">Excellent</label>
+                    <input class="radio_input" type="radio" value="Fair" id="Fair_comfort" name="radio_comfort">
+                    <label class="radio_label" for="Fair_comfort">Fair</label>
+                    <input class="radio_input" type="radio" value="Good" id="Good_comfort" name="radio_comfort">
+                    <label class="radio_label" for="Good_comfort">Good</label>
+                    <input class="radio_input" type="radio" value="Poor" id="Poor_comfort" name="radio_comfort">
+                    <label class="radio_label" for="Poor_comfort">Poor</label>
+                </div>
+                <div class="">Room Cleanliness</div>
+                <div class=" radio"> 
+                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_cleanliness" name="radio_cleanliness">
+                    <label class="radio_label" for="Excellent_cleanliness">Excellent</label>
+                    <input class="radio_input" type="radio" value="Fair" id="Fair_cleanliness" name="radio_cleanliness">
+                    <label class="radio_label" for="Fair_cleanliness">Fair</label>
+                    <input class="radio_input" type="radio" value="Good" id="Good_cleanliness" name="radio_cleanliness">
+                    <label class="radio_label" for="Good_cleanliness">Good</label>
+                    <input class="radio_input" type="radio" value="Poor" id="Poor_cleanliness" name="radio_cleanliness">
+                    <label class="radio_label" for="Poor_cleanliness">Poor</label>
+                </div>
+                <div class="">Hotel Condition</div>
+                <div class=" radio"> 
+                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_condition" name="radio_condition">
+                    <label class="radio_label" for="Excellent_condition">Excellent</label>
+                    <input class="radio_input" type="radio" value="Fair" id="fair_condition" name="radio_condition">
+                    <label class="radio_label" for="fair_condition">Fair</label>
+                    <input class="radio_input" type="radio" value="Good" id="Good_condition" name="radio_condition">
+                    <label class="radio_label" for="Good_condition">Good</label>
+                    <input class="radio_input" type="radio" value="Poor" id="Poor_condition" name="radio_condition">
+                    <label class="radio_label" for="Poor_condition">Poor</label>
+                </div>
+                <div class="">Food Dining</div>
+                <div class=" radio"> 
+                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_dining" name="radio_dining">
+                    <label class="radio_label" for="Excellent_dining">Excellent</label>
+                    <input class="radio_input" type="radio" value="Fair" id="Fair_dining" name="radio_dining">
+                    <label class="radio_label" for="Fair_dining">Fair</label>
+                    <input class="radio_input" type="radio" value="Good" id="Good_dining" name="radio_dining">
+                    <label class="radio_label" for="Good_dining">Good</label>
+                    <input class="radio_input" type="radio" value="Poor" id="Poor_dining" name="radio_dining">
+                    <label class="radio_label" for="Poor_dining">Poor</label>
+                </div>
+                <div class="">Facilities Pool and Gym</div>
+                <div class=" radio"> 
+                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_poolgym" name="radio_poolgym">
+                    <label class="radio_label" for="Excellent_poolgym">Excellent</label>
+                    <input class="radio_input" type="radio" value="Fair" id="Fair_poolgym" name="radio_poolgym">
+                    <label class="radio_label" for="Fair_poolgym">Fair</label>
+                    <input class="radio_input" type="radio" value="Good" id="Good_poolgym" name="radio_poolgym">
+                    <label class="radio_label" for="Good_poolgym">Good</label>
+                    <input class="radio_input" type="radio" value="Poor" id="Poor_poolgym" name="radio_poolgym">
+                    <label class="radio_label" for="Poor_poolgym">Poor</label>
+                </div>
+                <div class="">Value for money</div>
+                <div class=" radio"> 
+                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_valuemoney" name="radio_valuemoney">
+                    <label class="radio_label" for="Excellent_valuemoney">Excellent</label>
+                    <input class="radio_input" type="radio" value="Fair" id="Fair_valuemoney" name="radio_valuemoney">
+                    <label class="radio_label" for="Fair_valuemoney">Fair</label>
+                    <input class="radio_input" type="radio" value="Good" id="Good_valuemoney" name="radio_valuemoney">
+                    <label class="radio_label" for="Good_valuemoney">Good</label>
+                    <input class="radio_input" type="radio" value="Poor" id="Poor_valuemoney" name="radio_valuemoney">
+                    <label class="radio_label" for="Poor_valuemoney">Poor</label>
+                </div>
+                <div class="">Ambience</div>
+                <div class=" radio"> 
+                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_ambience" name="radio_ambience">
+                    <label class="radio_label" for="Excellent_ambience">Excellent</label>
+                    <input class="radio_input" type="radio" value="Fair" id="Fair_ambience" name="radio_ambience">
+                    <label class="radio_label" for="Fair_ambience">Fair</label>
+                    <input class="radio_input" type="radio" value="Good" id="Good_ambience" name="radio_ambience">
+                    <label class="radio_label" for="Good_ambience">Good</label>
+                    <input class="radio_input" type="radio" value="Poor" id="Poor_ambience" name="radio_ambience">
+                    <label class="radio_label" for="Poor_ambience">Poor</label>
+                </div>
+                </div>
+            </section>
+            <section>
+                <div class="radio1">
+                    <div class="row">
+                    <h3>Hotel Offers</h3>
+                    <div class="">Guest rooms</div>
+                    <div class=" radio"> 
+                        <input class="radio_input" type="radio" value="Excellent" id="Excellent_guestrooms" name="radio_guestrooms">
+                        <label class="radio_label" for="Excellent_guestrooms">Excellent</label>
+                        <input class="radio_input" type="radio" value="Fair" id="Fair_guestrooms" name="radio_guestrooms">
+                        <label class="radio_label" for="Fair_guestrooms">Fair</label>
+                        <input class="radio_input" type="radio" value="Good" id="Good_guestrooms" name="radio_guestrooms">
+                        <label class="radio_label" for="Good_guestrooms">Good</label>
+                        <input class="radio_input" type="radio" value="Poor" id="Poor_guestrooms" name="radio_guestrooms">
+                        <label class="radio_label" for="Poor_guestrooms">Poor</label>
+                    </div>
+                    <div class="">Function rooms</div>
+                    <div class=" radio"> 
+                        <input class="radio_input" type="radio" value="Excellent" id="Excellent_functionrooms" name="radio_functionroomsman">
+                        <label class="radio_label" for="Excellent_functionrooms">Excellent</label>
+                        <input class="radio_input" type="radio" value="Fair" id="Fair_functionrooms" name="radio_functionroomsman">
+                        <label class="radio_label" for="Fair_functionrooms">Fair</label>
+                        <input class="radio_input" type="radio" value="Good" id="Good_functionrooms" name="radio_functionroomsman">
+                        <label class="radio_label" for="Good_functionrooms">Good</label>
+                        <input class="radio_input" type="radio" value="Poor" id="Poor_functionrooms" name="radio_functionroomsman">
+                        <label class="radio_label" for="Poor_functionrooms">Poor</label>
+                    </div>
+                    <div class="">Restroom</div>
+                    <div class=" radio"> 
+                        <input class="radio_input" type="radio" value="Excellent" id="Excellent_restroom" name="radio_restroom">
+                        <label class="radio_label" for="Excellent_restroom">Excellent</label>
+                        <input class="radio_input" type="radio" value="Fair" id="Fair_restroom" name="radio_restroom">
+                        <label class="radio_label" for="Fair_restroom">Fair</label>
+                        <input class="radio_input" type="radio" value="Good" id="Good_restroom" name="radio_restroom">
+                        <label class="radio_label" for="Good_restroom">Good</label>
+                        <input class="radio_input" type="radio" value="Poor" id="Poor_restroom" name="radio_restroom">
+                        <label class="radio_label" for="Poor_restroom">Poor</label>
+                    </div>
+                    <div class="">Strand Cafe</div>
+                    <div class=" radio"> 
+                        <input class="radio_input" type="radio" value="Excellent" id="Excellent_strand" name="radio_strand">
+                        <label class="radio_label" for="Excellent_strand">Excellent</label>
+                        <input class="radio_input" type="radio" value="Fair" id="Fair_strand" name="radio_strand">
+                        <label class="radio_label" for="Fair_strand">Fair</label>
+                        <input class="radio_input" type="radio" value="Good" id="Good_strand" name="radio_strand">
+                        <label class="radio_label" for="Good_strand">Good</label>
+                        <input class="radio_input" type="radio" value="Poor" id="Poor_strand" name="radio_strand">
+                        <label class="radio_label" for="Poor_strand">Poor</label>
+                    </div>
+                    <div class="">Gym Facilities</div>
+                    <div class=" radio"> 
+                        <input class="radio_input" type="radio" value="Excellent" id="Excellent_gymfac" name="radio_gymfac">
+                        <label class="radio_label" for="Excellent_gymfac">Excellent</label>
+                        <input class="radio_input" type="radio" value="Fair" id="Fair_gymfac" name="radio_gymfac">
+                        <label class="radio_label" for="Fair_gymfac">Fair</label>
+                        <input class="radio_input" type="radio" value="Good" id="Good_gymfac" name="radio_gymfac">
+                        <label class="radio_label" for="Good_gymfac">Good</label>
+                        <input class="radio_input" type="radio" value="Poor" id="Poor_gymfac" name="radio_gymfac">
+                        <label class="radio_label" for="Poor_gymfac">Poor</label>
+                    </div>
+                    <div class="">Lap Pool</div>
+                    <div class=" radio"> 
+                        <input class="radio_input" type="radio" value="Excellent" id="Excellent_lappool" name="radio_lappool">
+                        <label class="radio_label" for="Excellent_lappool">Excellent</label>
+                        <input class="radio_input" type="radio" value="Fair" id="fair_lappool" name="radio_lappool">
+                        <label class="radio_label" for="fair_lappool">Fair</label>
+                        <input class="radio_input" type="radio" value="Good" id="Good_lappool" name="radio_lappool">
+                        <label class="radio_label" for="Good_lappool">Good</label>
+                        <input class="radio_input" type="radio" value="Poor" id="Poor_lappool" name="radio_lappool">
+                        <label class="radio_label" for="Poor_lappool">Poor</label>
+                    </div>
+                    </div>
+                </section>
+                <section>
+                <div class="radio1">
+        <div class="row">
+            <h3>Restaurant / Room Service</h3>
+            <div class="">Ambience</div>
+            <div class=" radio"> 
+                <input class="radio_input" type="radio" value="Excellent" id="Excellent_rrambience" name="radio_rrambience">
+                <label class="radio_label" for="Excellent_rrambience">Excellent</label>
+                <input class="radio_input" type="radio" value="Fair" id="Fair_rrambience" name="radio_rrambience">
+                <label class="radio_label" for="Fair_rrambience">Fair</label>
+                <input class="radio_input" type="radio" value="Good" id="Good_rrambience" name="radio_rrambience">
+                <label class="radio_label" for="Good_rrambience">Good</label>
+                <input class="radio_input" type="radio" value="Poor" id="Poor_rrambience" name="radio_rrambience">
+                <label class="radio_label" for="Poor_rrambience">Poor</label>
+            </div>
+            <div class="">Food presentation</div>
+            <div class=" radio"> 
+                <input class="radio_input" type="radio" value="Excellent" id="Excellent_rrpresentation" name="radio_rrpresentation">
+                <label class="radio_label" for="Excellent_rrpresentation">Excellent</label>
+                <input class="radio_input" type="radio" value="Fair" id="Fair_rrpresentation" name="radio_rrpresentation">
+                <label class="radio_label" for="Fair_rrpresentation">Fair</label>
+                <input class="radio_input" type="radio" value="Good" id="Good_rrpresentation" name="radio_rrpresentation">
+                <label class="radio_label" for="Good_rrpresentation">Good</label>
+                <input class="radio_input" type="radio" value="Poor" id="Poor_rrpresentation" name="radio_rrpresentation">
+                <label class="radio_label" for="Poor_rrpresentation">Poor</label>
+            </div>
+            <div class="">Food Quality and Taste</div>
+            <div class=" radio"> 
+                <input class="radio_input" type="radio" value="Excellent" id="Excellent_rrfoodquality" name="radio_rrfoodquality">
+                <label class="radio_label" for="Excellent_rrfoodquality">Excellent</label>
+                <input class="radio_input" type="radio" value="Fair" id="Fair_rrfoodquality" name="radio_rrfoodquality">
+                <label class="radio_label" for="Fair_rrfoodquality">Fair</label>
+                <input class="radio_input" type="radio" value="Good" id="Good_rrfoodquality" name="radio_rrfoodquality">
+                <label class="radio_label" for="Good_rrfoodquality">Good</label>
+                <input class="radio_input" type="radio" value="Poor" id="Poor_rrfoodquality" name="radio_rrfoodquality">
+                <label class="radio_label" for="Poor_rrfoodquality">Poor</label>
+            </div>
+            <div class="">Portion Size</div>
+            <div class=" radio"> 
+                <input class="radio_input" type="radio" value="Excellent" id="Excellent_rrfoodpresent" name="radio_rrfoodpresent">
+                <label class="radio_label" for="Excellent_rrfoodpresent">Excellent</label>
+                <input class="radio_input" type="radio" value="Fair" id="Fair_rrfoodpresent" name="radio_rrfoodpresent">
+                <label class="radio_label" for="Fair_rrfoodpresent">Fair</label>
+                <input class="radio_input" type="radio" value="Good" id="Good_rrfoodpresent" name="radio_rrfoodpresent">
+                <label class="radio_label" for="Good_rrfoodpresent">Good</label>
+                <input class="radio_input" type="radio" value="Poor" id="Poor_rrfoodpresent" name="radio_rrfoodpresent">
+                <label class="radio_label" for="Poor_rrfoodpresent">Poorasdasd</label>
+            </div>
+            <div class="">Promptness of Service</div>
+            <div class=" radio"> 
+                <input class="radio_input" type="radio" value="Excellent" id="Excellent_rrpromptservice" name="radio_rrpromptservice">
+                <label class="radio_label" for="Excellent_rrpromptservice">Excellent</label>
+                <input class="radio_input" type="radio" value="Fair" id="Fair_rrpromptservice" name="radio_rrpromptservice">
+                <label class="radio_label" for="Fair_rrpromptservice">Fair</label>
+                <input class="radio_input" type="radio" value="Good" id="Good_rrpromptservice" name="radio_rrpromptservice">
+                <label class="radio_label" for="Good_rrpromptservice">Good</label>
+                <input class="radio_input" type="radio" value="Poor" id="Poor_rrpromptservice" name="radio_rrpromptservice">
+                <label class="radio_label" for="Poor_rrpromptservice">Poor</label>
+            </div>
+            <div class="">Courtesy of Restaurant</div>
+            <div class=" radio"> 
+                <input class="radio_input" type="radio" value="Excellent" id="Excellent_rrcourtesy" name="radio_rrcourtesy">
+                <label class="radio_label" for="Excellent_rrcourtesy">Excellent</label>
+                <input class="radio_input" type="radio" value="Fair" id="fair_rrcourtesy" name="radio_rrcourtesy">
+                <label class="radio_label" for="fair_rrcourtesy">Fair</label>
+                <input class="radio_input" type="radio" value="Good" id="Good_rrcourtesy" name="radio_rrcourtesy">
+                <label class="radio_label" for="Good_rrcourtesy">Good</label>
+                <input class="radio_input" type="radio" value="Poor" id="Poor_rrcourtesy" name="radio_rrcourtesy">
+                <label class="radio_label" for="Poor_rrcourtesy">Poor</label>
+            </div>
+            <div class="">Associates</div>
+            <div class=" radio"> 
+                <input class="radio_input" type="radio" value="Excellent" id="Excellent_rrassociates" name="radio_rrassociates">
+                <label class="radio_label" for="Excellent_rrassociates">Excellent</label>
+                <input class="radio_input" type="radio" value="Fair" id="Fair_rrassociates" name="radio_rrassociates">
+                <label class="radio_label" for="Fair_rrassociates">Fair</label>
+                <input class="radio_input" type="radio" value="Good" id="Good_rrassociates" name="radio_rrassociates">
+                <label class="radio_label" for="Good_rrassociates">Good</label>
+                <input class="radio_input" type="radio" value="Poor" id="Poor_rrassociates" name="radio_rrassociates">
+                <label class="radio_label" for="Poor_rrassociates">Poor</label>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+    <input type="submit" name="submitButton">
+    
+    <script type="text/javascript" src="bootstrap.min."></script>
+</form>
+</body>
+</html>
