@@ -54,9 +54,9 @@ p {
   border-right: 1px solid #342c1e;
 }
 
-/* .radio_input:checked + .radio_label {
+.radio_input:checked + .radio_label {
   background: #342c1e;
-} */
+}
 
 @media screen and (max-width: 450px) {
   body {
