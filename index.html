@@ -4,493 +4,463 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     
     <title>Document</title>
 </head>
 <body>
-
     <div class="hero-image">
-        <div class="hero-sec">
-            <h1 class="headTitle">We value your comments and suggestions</h1>
+        <div class="textTitle">
+            <div class="step hero-sec">
+                <h1 class="headTitle">We value your comments and suggestions</h1>
+             </div>
+            <div class="descrip">
+                <p class="greet">
+                    We want you to be part of our goal which is to improve the quality of our
+                    services and facilities. We would appreciate very much a few minutes of
+                    your time to fill up the form
+                </p>
+            </div>
+            <button type="button" class="btns">Take Survey</button>
         </div>
+        
     </div>
 
     <form class= "formBody" id="guestSurveyForm">
-        <div class="dateOfStay row">
-            <p class="greet">
-                We want you to be part of our goal which is to improve the quality of our
-                services and facilities. We would appreciate very much a few minutes of
-                your time to fill up the form
-                </p>
-            <h3>Period of Stay</h3>
+        <div class="dateOfStay">
+            <h3 class="periodOfStay">Period of Stay</h3>
             <div class="dateStay">
                 <div class="row">
-                    <div class="date1">
-                        <label for="dateStayFrom" class="col-3">From:</label>
-                        <input class="col-3" type="date" id="dateStayFrom" />
-                        <label for="dateStayFrom" class="col-3">From:</label>
-                        <input class="col-3" type="date" id="dateStayFrom" />
+                    <h5 class="col-6">From:</h5>
+                    <h5 class="col-6">To:</h5>
+                    <input class="col-6 dateButton" type="date" id="dateStayFrom"/>
+                    <input class="col-6 dateButton" type="date" id="dateStayTo"/>
+                    <input class="col" type="number" min="1901" max="3912" id="guestRoomNumber" placeholder="Room Number">
+                </div>
+            </div>
+        </div>
+        <div class="bodyForm">
+            <section>
+                <div class="steps">
+                    <div class="row">
+                        <h3 class="col-6">Hotel Associate</h3>
+                        <div class="des col-6">
+                            <span>Excellent</span>
+                            <span>Fair</span>
+                            <span>Good</span>
+                            <span>Poor</span>
+                        </div>
+                        <div class="col-6">Front Desk Staff</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="starfds" id="starfds1"><label for="starfds1"></label>
+                            <input type="radio" name="starfds" id="starfds2"><label for="starfds2"></label>
+                            <input type="radio" name="starfds" id="starfds3"><label for="starfds3"></label>
+                            <input type="radio" name="starfds" id="starfds4"><label for="starfds4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Bellman</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="starbm" id="starbm1"><label for="starbm1"></label>
+                            <input type="radio" name="starbm" id="starbm2"><label for="starbm2"></label>
+                            <input type="radio" name="starbm" id="starbm3"><label for="starbm3"></label>
+                            <input type="radio" name="starbm" id="starbm4"><label for="starbm4"></label>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-6">Lobby Guard</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="starlg" id="starlg1"><label for="starlg1"></label>
+                            <input type="radio" name="starlg" id="starlg2"><label for="starlg2"></label>
+                            <input type="radio" name="starlg" id="starlg3"><label for="starlg3"></label>
+                            <input type="radio" name="starlg" id="starlg4"><label for="starlg4"></label>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-6">Restaurant Associate</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="starras" id="starras1"><label for="starras1"></label>
+                            <input type="radio" name="starras" id="starras2"><label for="starras2"></label>
+                            <input type="radio" name="starras" id="starras3"><label for="starras3"></label>
+                            <input type="radio" name="starras" id="starras4"><label for="starras4"></label>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-6">Room Attendant</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="starrat" id="starrat1"><label for="starrat1"></label>
+                            <input type="radio" name="starrat" id="starrat2"><label for="starrat2"></label>
+                            <input type="radio" name="starrat" id="starrat3"><label for="starrat3"></label>
+                            <input type="radio" name="starrat" id="starrat4"><label for="starrat4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Chauffeur</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="starcf" id="starcf1"><label for="starcf1"></label>
+                            <input type="radio" name="starcf" id="starcf2"><label for="starcf2"></label>
+                            <input type="radio" name="starcf" id="starcf3"><label for="starcf3"></label>
+                            <input type="radio" name="starcf" id="starcf4"><label for="starcf4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Guest Services</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="stargs" id="stargs1"><label for="stargs1"></label>
+                            <input type="radio" name="stargs" id="stargs2"><label for="stargs2"></label>
+                            <input type="radio" name="stargs" id="stargs3"><label for="stargs3"></label>
+                            <input type="radio" name="stargs" id="stargs4"><label for="stargs4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Gym Attendant</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="starga" id="starga1"><label for="starga1"></label>
+                            <input type="radio" name="starga" id="starga2"><label for="starga2"></label>
+                            <input type="radio" name="starga" id="starga3"><label for="starga3"></label>
+                            <input type="radio" name="starga" id="starga4"><label for="starga4"></label>
+                        </div>
+                    </div>
+                    <!-- <button type="button" class="next-btn">Next</button>     -->
+                </div>
+                <div class="steps">
+                    <div class="row">
+                        <h3 class="col-6">Staff and Guest Relation</h3>
+                        <div class="des col-6">
+                            <span>Excellent</span>
+                            <span>Fair</span>
+                            <span>Good</span>
+                            <span>Poor</span>
+                        </div>
+                        <div class="col-6">Staff courteosness</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="staffCourt" id="staffCourt1"><label for="staffCourt1"></label>
+                            <input type="radio" name="staffCourt" id="staffCourt2"><label for="staffCourt2"></label>
+                            <input type="radio" name="staffCourt" id="staffCourt3"><label for="staffCourt3"></label>
+                            <input type="radio" name="staffCourt" id="staffCourt4"><label for="staffCourt4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Product Knowledge</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="prodKnow" id="prodKnow1"><label for="prodKnow1"></label>
+                            <input type="radio" name="prodKnow" id="prodKnow2"><label for="prodKnow2"></label>
+                            <input type="radio" name="prodKnow" id="prodKnow3"><label for="prodKnow3"></label>
+                            <input type="radio" name="prodKnow" id="prodKnow4"><label for="prodKnow4"></label>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-6">Attentiveness</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="attentive" id="attentive1"><label for="attentive1"></label>
+                            <input type="radio" name="attentive" id="attentive2"><label for="attentive2"></label>
+                            <input type="radio" name="attentive" id="attentive3"><label for="attentive3"></label>
+                            <input type="radio" name="attentive" id="attentive4"><label for="attentive4"></label>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-6">Friendliness</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="friendliness" id="friendliness1"><label for="friendliness1"></label>
+                            <input type="radio" name="friendliness" id="friendliness2"><label for="friendliness2"></label>
+                            <input type="radio" name="friendliness" id="friendliness3"><label for="friendliness3"></label>
+                            <input type="radio" name="friendliness" id="friendliness4"><label for="friendliness4"></label>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-6">Helpfulness</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="Helpfulness" id="Helpfulness1"><label for="Helpfulness1"></label>
+                            <input type="radio" name="Helpfulness" id="Helpfulness2"><label for="Helpfulness2"></label>
+                            <input type="radio" name="Helpfulness" id="Helpfulness3"><label for="Helpfulness3"></label>
+                            <input type="radio" name="Helpfulness" id="Helpfulness4"><label for="Helpfulness4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Grooming</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="Grooming" id="Grooming1"><label for="Grooming1"></label>
+                            <input type="radio" name="Grooming" id="Grooming2"><label for="Grooming2"></label>
+                            <input type="radio" name="Grooming" id="Grooming3"><label for="Grooming3"></label>
+                            <input type="radio" name="Grooming" id="Grooming4"><label for="Grooming4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Check in process</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="checkIn" id="checkIn1"><label for="checkIn1"></label>
+                            <input type="radio" name="checkIn" id="checkIn2"><label for="checkIn2"></label>
+                            <input type="radio" name="checkIn" id="checkIn3"><label for="checkIn3"></label>
+                            <input type="radio" name="checkIn" id="checkIn4"><label for="checkIn4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Reservation</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="Reservation" id="Reservation1"><label for="Reservation1"></label>
+                            <input type="radio" name="Reservation" id="Reservation2"><label for="Reservation2"></label>
+                            <input type="radio" name="Reservation" id="Reservation3"><label for="Reservation3"></label>
+                            <input type="radio" name="Reservation" id="Reservation4"><label for="Reservation4"></label>
+                        </div>
+                    </div>
+                    <!-- <button type="button" class="previous-btn">Back</button> 
+                    <button type="button" class="next-btn">Next</button>      -->
+                </div>
+                <div class="steps">
+                    <div class="row">
+                        <h3 class="col-6">General Area</h3>
+                        <div class="des col-6">
+                            <span>Excellent</span>
+                            <span>Fair</span>
+                            <span>Good</span>
+                            <span>Poor</span>
+                        </div>
+                        <div class="col-6">Wi-Fi Connection</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="wifi" id="wifi1"><label for="wifi1"></label>
+                            <input type="radio" name="wifi" id="wifi2"><label for="wifi2"></label>
+                            <input type="radio" name="wifi" id="wifi3"><label for="wifi3"></label>
+                            <input type="radio" name="wifi" id="wifi4"><label for="wifi4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Location</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="location" id="location1"><label for="location1"></label>
+                            <input type="radio" name="location" id="location2"><label for="location2"></label>
+                            <input type="radio" name="location" id="location3"><label for="location3"></label>
+                            <input type="radio" name="location" id="location4"><label for="location4"></label>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-6">Room Comfort</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="rmcomfort" id="rmcomfort1"><label for="rmcomfort1"></label>
+                            <input type="radio" name="rmcomfort" id="rmcomfort2"><label for="rmcomfort2"></label>
+                            <input type="radio" name="rmcomfort" id="rmcomfort3"><label for="rmcomfort3"></label>
+                            <input type="radio" name="rmcomfort" id="rmcomfort4"><label for="rmcomfort4"></label>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-6">Room Clealiness</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="rmcleanliness" id="rmcleanliness1"><label for="rmcleanliness1"></label>
+                            <input type="radio" name="rmcleanliness" id="rmcleanliness2"><label for="rmcleanliness2"></label>
+                            <input type="radio" name="rmcleanliness" id="rmcleanliness3"><label for="rmcleanliness3"></label>
+                            <input type="radio" name="rmcleanliness" id="rmcleanliness4"><label for="rmcleanliness4"></label>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-6">Hotel Condition</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="hotCondition" id="hotCondition1"><label for="hotCondition1"></label>
+                            <input type="radio" name="hotCondition" id="hotCondition2"><label for="hotCondition2"></label>
+                            <input type="radio" name="hotCondition" id="hotCondition3"><label for="hotCondition3"></label>
+                            <input type="radio" name="hotCondition" id="hotCondition4"><label for="hotCondition4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Food Dining</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="dining" id="dining1"><label for="dining1"></label>
+                            <input type="radio" name="dining" id="dining2"><label for="dining2"></label>
+                            <input type="radio" name="dining" id="dining3"><label for="dining3"></label>
+                            <input type="radio" name="dining" id="dining4"><label for="dining4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Facilities</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="Facilities" id="Facilities1"><label for="Facilities1"></label>
+                            <input type="radio" name="Facilities" id="Facilities2"><label for="Facilities2"></label>
+                            <input type="radio" name="Facilities" id="Facilities3"><label for="Facilities3"></label>
+                            <input type="radio" name="Facilities" id="Facilities4"><label for="Facilities4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Value for money</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="vmoney" id="vmoney1"><label for="vmoney1"></label>
+                            <input type="radio" name="vmoney" id="vmoney2"><label for="vmoney2"></label>
+                            <input type="radio" name="vmoney" id="vmoney3"><label for="vmoney3"></label>
+                            <input type="radio" name="vmoney" id="vmoney4"><label for="vmoney4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Ambience</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="amb" id="amb1"><label for="amb1"></label>
+                            <input type="radio" name="amb" id="amb2"><label for="amb2"></label>
+                            <input type="radio" name="amb" id="amb3"><label for="amb3"></label>
+                            <input type="radio" name="amb" id="amb4"><label for="amb4"></label>
+                        </div>
+                    </div>
+                    <!-- <button type="button" class="previous-btn">Back</button>
+                    <button type="submit" class="sumbit-btn">Submit</button>         -->
+                </div>
+                <div class="steps">
+                    <div class="row">
+                        <h3 class="col-6">Hotel Offers</h3>
+                        <div class="des col-6">
+                            <span>Excellent</span>
+                            <span>Fair</span>
+                            <span>Good</span>
+                            <span>Poor</span>
+                        </div>
+                        <div class="col-6">Guest Rooms</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="guestRooms" id="guestRooms1"><label for="guestRooms1"></label>
+                            <input type="radio" name="guestRooms" id="guestRooms2"><label for="guestRooms2"></label>
+                            <input type="radio" name="guestRooms" id="guestRooms3"><label for="guestRooms3"></label>
+                            <input type="radio" name="guestRooms" id="guestRooms4"><label for="guestRooms4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Function Rooms</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="functionRoom" id="functionRoom1"><label for="functionRoom1"></label>
+                            <input type="radio" name="functionRoom" id="functionRoom2"><label for="functionRoom2"></label>
+                            <input type="radio" name="functionRoom" id="functionRoom3"><label for="functionRoom3"></label>
+                            <input type="radio" name="functionRoom" id="functionRoom4"><label for="functionRoom4"></label>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-6">Restroom</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="restroom" id="restroom1"><label for="restroom1"></label>
+                            <input type="radio" name="restroom" id="restroom2"><label for="restroom2"></label>
+                            <input type="radio" name="restroom" id="restroom3"><label for="restroom3"></label>
+                            <input type="radio" name="restroom" id="restroom4"><label for="restroom4"></label>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-6">Strand Cafe</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="strand" id="strand1"><label for="strand1"></label>
+                            <input type="radio" name="strand" id="strand2"><label for="strand2"></label>
+                            <input type="radio" name="strand" id="strand3"><label for="strand3"></label>
+                            <input type="radio" name="strand" id="strand4"><label for="strand4"></label>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-6">Gym Facilities</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="gym" id="gym1"><label for="gym1"></label>
+                            <input type="radio" name="gym" id="gym2"><label for="gym2"></label>
+                            <input type="radio" name="gym" id="gym3"><label for="gym3"></label>
+                            <input type="radio" name="gym" id="gym4"><label for="gym4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Lap pool</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="pool" id="pool1"><label for="pool1"></label>
+                            <input type="radio" name="pool" id="pool2"><label for="pool2"></label>
+                            <input type="radio" name="pool" id="pool3"><label for="pool3"></label>
+                            <input type="radio" name="pool" id="pool4"><label for="pool4"></label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-        </div>
-
-<div class="bodyForm">
-<section>
-    <div class="hotelAssociate">
-    <div class="row">
-        <h3>Hotel Associate</h3>
-        <div class="col-6">Front Desk Staff</div>
-        <div class="col-6 button"> 
-            <input class="radio_input" type="radio" value="Excellent" id="Excellent_front" name="radio_front">
-            <label class="radio_label" for="Excellent_front">Excellent</label>
-            <input class="radio_input" type="radio" value="Fair" id="Fair_front" name="radio_front">
-            <label class="radio_label" for="Fair_front">Fair</label>
-            <input class="radio_input" type="radio" value="Good" id="Good_front" name="radio_front">
-            <label class="radio_label" for="Good_front">Good</label>
-            <input class="radio_input" type="radio" value="Poor" id="Poor_front" name="radio_front">
-            <label class="radio_label" for="Poor_front">Poor</label>
-        </div>
-        <div class="col-6">Bellman</div>
-        <div class="col-6 button"> 
-            <input class="radio_input" type="radio" value="Excellent" id="Excellent_bell" name="radio_bellman">
-            <label class="radio_label" for="Excellent_bell">Excellent</label>
-            <input class="radio_input" type="radio" value="Fair" id="Fair_bell" name="radio_bellman">
-            <label class="radio_label" for="Fair_bell">Fair</label>
-            <input class="radio_input" type="radio" value="Good" id="Good_bell" name="radio_bellman">
-            <label class="radio_label" for="Good_bell">Good</label>
-            <input class="radio_input" type="radio" value="Poor" id="Poor_bell" name="radio_bellman">
-            <label class="radio_label" for="Poor_bell">Poor</label>
-        </div>
-        <div class="col-6">Lobby Guard</div>
-        <div class="col-6 button"> 
-            <input class="radio_input" type="radio" value="Excellent" id="Excellent_Guard" name="radio_guard">
-            <label class="radio_label" for="Excellent_Guard">Excellent</label>
-            <input class="radio_input" type="radio" value="Fair" id="Fair_Guard" name="radio_guard">
-            <label class="radio_label" for="Fair_Guard">Fair</label>
-            <input class="radio_input" type="radio" value="Good" id="Good_Guard" name="radio_guard">
-            <label class="radio_label" for="Good_Guard">Good</label>
-            <input class="radio_input" type="radio" value="Poor" id="Poor_Guard" name="radio_guard">
-            <label class="radio_label" for="Poor_Guard">Poor</label>
-        </div>
-        <div class="col-6">Restaurant Assosciate</div>
-        <div class="col-6 button"> 
-            <input class="radio_input" type="radio" value="Excellent" id="Excellent_restau" name="radio_restau">
-            <label class="radio_label" for="Excellent_restau">Excellent</label>
-            <input class="radio_input" type="radio" value="Fair" id="Fair_restau" name="radio_restau">
-            <label class="radio_label" for="Fair_restau">Fair</label>
-            <input class="radio_input" type="radio" value="Good" id="Good_restau" name="radio_restau">
-            <label class="radio_label" for="Good_restau">Good</label>
-            <input class="radio_input" type="radio" value="Poor" id="Poor_restau" name="radio_restau">
-            <label class="radio_label" for="Poor_restau">Poor</label>
-        </div>
-        <div class="col-6">Room Attendant</div>
-        <div class="col-6 button"> 
-            <input class="radio_input" type="radio" value="Excellent" id="Excellent_attendant" name="radio_attendant">
-            <label class="radio_label" for="Excellent_attendant">Excellent</label>
-            <input class="radio_input" type="radio" value="Fair" id="Fair_attendant" name="radio_attendant">
-            <label class="radio_label" for="Fair_attendant">Fair</label>
-            <input class="radio_input" type="radio" value="Good" id="Good_attendant" name="radio_attendant">
-            <label class="radio_label" for="Good_attendant">Good</label>
-            <input class="radio_input" type="radio" value="Poor" id="Poor_attendant" name="radio_attendant">
-            <label class="radio_label" for="Poor_attendant">Poor</label>
-        </div>
-        <div class="col-6">Chauffeur</div>
-        <div class="col-6 button"> 
-            <input class="radio_input" type="radio" value="Excellent" id="Excellent_chauffeur" name="radio_chauffeur">
-            <label class="radio_label" for="Excellent_chauffeur">Excellent</label>
-            <input class="radio_input" type="radio" value="Fair" id="fair_chauffeur" name="radio_chauffeur">
-            <label class="radio_label" for="fair_chauffeur">Fair</label>
-            <input class="radio_input" type="radio" value="Good" id="Good_chauffeur" name="radio_chauffeur">
-            <label class="radio_label" for="Good_chauffeur">Good</label>
-            <input class="radio_input" type="radio" value="Poor" id="Poor_chauffeur" name="radio_chauffeur">
-            <label class="radio_label" for="Poor_chauffeur">Poor</label>
-        </div>
-        <div class="col-6">Guest Services</div>
-        <div class="col-6 button"> 
-            <input class="radio_input" type="radio" value="Excellent" id="Excellent_Services" name="radio_services">
-            <label class="radio_label" for="Excellent_Services">Excellent</label>
-            <input class="radio_input" type="radio" value="Fair" id="Fair_Services" name="radio_services">
-            <label class="radio_label" for="Fair_Services">Fair</label>
-            <input class="radio_input" type="radio" value="Good" id="Good_Services" name="radio_services">
-            <label class="radio_label" for="Good_Services">Good</label>
-            <input class="radio_input" type="radio" value="Poor" id="Poor_Services" name="radio_services">
-            <label class="radio_label" for="Poor_Services">Poor</label>
-        </div>
-        <div class="col-6">Gym Attendant</div>
-        <div class="col-6 button"> 
-            <input class="radio_input" type="radio" value="Excellent" id="Excellent_Gym" name="radio_gym">
-            <label class="radio_label" for="Excellent_Gym">Excellent</label>
-            <input class="radio_input" type="radio" value="Fair" id="Fair_Gym" name="radio_gym">
-            <label class="radio_label" for="Fair_Gym">Fair</label>
-            <input class="radio_input" type="radio" value="Good" id="Good_Gym" name="radio_gym">
-            <label class="radio_label" for="Good_Gym">Good</label>
-            <input class="radio_input" type="radio" value="Poor" id="Poor_Gym" name="radio_gym">
-            <label class="radio_label" for="Poor_Gym">Poor</label>
-        </div>
-    </div>
-    </div>
-</section>
-<section>
-    <div class="guestRelations">
-        <div class="row">
-            <h3>Staff and Guest Relations</h3>
-            <div class="col-6">Staff courteousness</div>
-            <div class="col-6 button"> 
-                <input class="radio_input" type="radio" value="Excellent" id="Excellent_courteous" name="radio_courteous">
-                <label class="radio_label" for="Excellent_courteous">Excellent</label>
-                <input class="radio_input" type="radio" value="Fair" id="Fair_courteous" name="radio_courteous">
-                <label class="radio_label" for="Fair_courteous">Fair</label>
-                <input class="radio_input" type="radio" value="Good" id="Good_courteous" name="radio_courteous">
-                <label class="radio_label" for="Good_courteous">Good</label>
-                <input class="radio_input" type="radio" value="Poor" id="Poor_courteous" name="radio_courteous">
-                <label class="radio_label" for="Poor_courteous">Poor</label>
-            </div>
-            <div class="col-6">Product Knowledge</div>
-            <div class="col-6 button"> 
-                <input class="radio_input" type="radio" value="Excellent" id="Excellent_knowledge" name="radio_knowledge">
-                <label class="radio_label" for="Excellent_knowledge">Excellent</label>
-                <input class="radio_input" type="radio" value="Fair" id="Fair_knowledge" name="radio_knowledge">
-                <label class="radio_label" for="Fair_knowledge">Fair</label>
-                <input class="radio_input" type="radio" value="Good" id="Good_knowledge" name="radio_knowledge">
-                <label class="radio_label" for="Good_knowledge">Good</label>
-                <input class="radio_input" type="radio" value="Poor" id="Poor_knowledge" name="radio_knowledge">
-                <label class="radio_label" for="Poor_knowledge">Poor</label>
-            </div>
-            <div class="col-6">Attentiveness</div>
-            <div class="col-6 button"> 
-                <input class="radio_input" type="radio" value="Excellent" id="Excellent_attentiveness" name="radio_attentiveness">
-                <label class="radio_label" for="Excellent_attentiveness">Excellent</label>
-                <input class="radio_input" type="radio" value="Fair" id="Fair_attentiveness" name="radio_attentiveness">
-                <label class="radio_label" for="Fair_attentiveness">Fair</label>
-                <input class="radio_input" type="radio" value="Good" id="Good_attentiveness" name="radio_attentiveness">
-                <label class="radio_label" for="Good_attentiveness">Good</label>
-                <input class="radio_input" type="radio" value="Poor" id="Poor_attentiveness" name="radio_attentiveness">
-                <label class="radio_label" for="Poor_attentiveness">Poor</label>
-            </div>
-            <div class="col-6">Friendliness</div>
-            <div class="col-6 button"> 
-                <input class="radio_input" type="radio" value="Excellent" id="Excellent_friendliness" name="radio_friendliness">
-                <label class="radio_label" for="Excellent_friendliness">Excellent</label>
-                <input class="radio_input" type="radio" value="Fair" id="Fair_friendliness" name="radio_friendliness">
-                <label class="radio_label" for="Fair_friendliness">Fair</label>
-                <input class="radio_input" type="radio" value="Good" id="Good_friendliness" name="radio_friendliness">
-                <label class="radio_label" for="Good_friendliness">Good</label>
-                <input class="radio_input" type="radio" value="Poor" id="Poor_friendliness" name="radio_friendliness">
-                <label class="radio_label" for="Poor_friendliness">Poor</label>
-            </div>
-            <div class="col-6">Helpfulness</div>
-            <div class="col-6 button"> 
-                <input class="radio_input" type="radio" value="Excellent" id="Excellent_helpfullness" name="radio_helpfullness">
-                <label class="radio_label" for="Excellent_helpfullness">Excellent</label>
-                <input class="radio_input" type="radio" value="Fair" id="Fair_helpfullness" name="radio_helpfullness">
-                <label class="radio_label" for="Fair_helpfullness">Fair</label>
-                <input class="radio_input" type="radio" value="Good" id="Good_helpfullness" name="radio_helpfullness">
-                <label class="radio_label" for="Good_helpfullness">Good</label>
-                <input class="radio_input" type="radio" value="Poor" id="Poor_helpfullness" name="radio_helpfullness">
-                <label class="radio_label" for="Poor_helpfullness">Poor</label>
-            </div>
-            <div class="col-6">Grooming</div>
-            <div class="col-6 button"> 
-                <input class="radio_input" type="radio" value="Excellent" id="Excellent_grooming" name="radio_grooming">
-                <label class="radio_label" for="Excellent_grooming">Excellent</label>
-                <input class="radio_input" type="radio" value="Fair" id="fair_grooming" name="radio_grooming">
-                <label class="radio_label" for="fair_grooming">Fair</label>
-                <input class="radio_input" type="radio" value="Good" id="Good_grooming" name="radio_grooming">
-                <label class="radio_label" for="Good_grooming">Good</label>
-                <input class="radio_input" type="radio" value="Poor" id="Poor_grooming" name="radio_grooming">
-                <label class="radio_label" for="Poor_grooming">Poor</label>
-            </div>
-            <div class="col-6">Check in process</div>
-            <div class="col-6 button"> 
-                <input class="radio_input" type="radio" value="Excellent" id="Excellent_checkin" name="radio_checkin">
-                <label class="radio_label" for="Excellent_checkin">Excellent</label>
-                <input class="radio_input" type="radio" value="Fair" id="Fair_checkin" name="radio_checkin">
-                <label class="radio_label" for="Fair_checkin">Fair</label>
-                <input class="radio_input" type="radio" value="Good" id="Good_checkin" name="radio_checkin">
-                <label class="radio_label" for="Good_checkin">Good</label>
-                <input class="radio_input" type="radio" value="Poor" id="Poor_checkin" name="radio_checkin">
-                <label class="radio_label" for="Poor_checkin">Poor</label>
-            </div>
-            <div class="col-6">Reservation Efficiency</div>
-            <div class="col-6 button"> 
-                <input class="radio_input" type="radio" value="Excellent" id="Excellent_efficency" name="radio_efficency">
-                <label class="radio_label" for="Excellent_efficency">Excellent</label>
-                <input class="radio_input" type="radio" value="Fair" id="Fair_efficency" name="radio_efficency">
-                <label class="radio_label" for="Fair_efficency">Fair</label>
-                <input class="radio_input" type="radio" value="Good" id="Good_efficency" name="radio_efficency">
-                <label class="radio_label" for="Good_efficency">Good</label>
-                <input class="radio_input" type="radio" value="Poor" id="Poor_efficency" name="radio_efficency">
-                <label class="radio_label" for="Poor_efficency">Poor</label>
-            </div>
-            </div>
-        </section>
-        <section>
-            <div class="radio1">
-                <div class="row">
-                <h3>General Area</h3>
-                <div class="col-6">Wi-fi Connection</div>
-                <div class="col-6 button"> 
-                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_wifi" name="radio_wifi">
-                    <label class="radio_label" for="Excellent_wifi">Excellent</label>
-                    <input class="radio_input" type="radio" value="Fair" id="Fair_wifi" name="radio_wifi">
-                    <label class="radio_label" for="Fair_wifi">Fair</label>
-                    <input class="radio_input" type="radio" value="Good" id="Good_wifi" name="radio_wifi">
-                    <label class="radio_label" for="Good_wifi">Good</label>
-                    <input class="radio_input" type="radio" value="Poor" id="Poor_wifi" name="radio_wifi">
-                    <label class="radio_label" for="Poor_wifi">Poor</label>
+                <div class="steps">
+                    <div class="row">
+                        <h3 class="col-6">Restaurant & Room Service</h3>
+                        <div class="des col-6">
+                            <span>Excellent</span>
+                            <span>Fair</span>
+                            <span>Good</span>
+                            <span>Poor</span>
+                        </div>
+                        <div class="col-6">Ambience</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="ambience" id="ambience1"><label for="ambience1"></label>
+                            <input type="radio" name="ambience" id="ambience2"><label for="ambience2"></label>
+                            <input type="radio" name="ambience" id="ambience3"><label for="ambience3"></label>
+                            <input type="radio" name="ambience" id="ambience4"><label for="ambience4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Food presentation</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="foodPresentation" id="foodPresentation1"><label for="foodPresentation1"></label>
+                            <input type="radio" name="foodPresentation" id="foodPresentation2"><label for="foodPresentation2"></label>
+                            <input type="radio" name="foodPresentation" id="foodPresentation3"><label for="foodPresentation3"></label>
+                            <input type="radio" name="foodPresentation" id="foodPresentation4"><label for="foodPresentation4"></label>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-6">Food Quality and Taste</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="qualityTaste" id="qualityTaste1"><label for="qualityTaste1"></label>
+                            <input type="radio" name="qualityTaste" id="qualityTaste2"><label for="qualityTaste2"></label>
+                            <input type="radio" name="qualityTaste" id="qualityTaste3"><label for="qualityTaste3"></label>
+                            <input type="radio" name="qualityTaste" id="qualityTaste4"><label for="qualityTaste4"></label>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-6">Portion and Size</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="portionSize" id="portionSize1"><label for="portionSize1"></label>
+                            <input type="radio" name="portionSize" id="portionSize2"><label for="portionSize2"></label>
+                            <input type="radio" name="portionSize" id="portionSize3"><label for="portionSize3"></label>
+                            <input type="radio" name="portionSize" id="portionSize4"><label for="portionSize4"></label>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-6">Promptness of Service</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="promptService" id="promptService1"><label for="promptService1"></label>
+                            <input type="radio" name="promptService" id="promptService2"><label for="promptService2"></label>
+                            <input type="radio" name="promptService" id="promptService3"><label for="promptService3"></label>
+                            <input type="radio" name="promptService" id="promptService4"><label for="promptService4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Courtesy of Restaurant</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="courtesyRestaurant" id="courtesyRestaurant1"><label for="courtesyRestaurant1"></label>
+                            <input type="radio" name="courtesyRestaurant" id="courtesyRestaurant2"><label for="courtesyRestaurant2"></label>
+                            <input type="radio" name="courtesyRestaurant" id="courtesyRestaurant3"><label for="courtesyRestaurant3"></label>
+                            <input type="radio" name="courtesyRestaurant" id="courtesyRestaurant4"><label for="courtesyRestaurant4"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Associates</div>
+                        <div class="col-6 button"> 
+                            <input type="radio" name="assoc" id="assoc1"><label for="assoc1"></label>
+                            <input type="radio" name="assoc" id="assoc2"><label for="assoc2"></label>
+                            <input type="radio" name="assoc" id="assoc3"><label for="assoc3"></label>
+                            <input type="radio" name="assoc" id="assoc4"><label for="assoc4"></label>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6">Location</div>
-                <div class="col-6 button"> 
-                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_location" name="radio_location">
-                    <label class="radio_label" for="Excellent_location">Excellent</label>
-                    <input class="radio_input" type="radio" value="Fair" id="Fair_location" name="radio_location">
-                    <label class="radio_label" for="Fair_location">Fair</label>
-                    <input class="radio_input" type="radio" value="Good" id="Good_location" name="radio_location">
-                    <label class="radio_label" for="Good_location">Good</label>
-                    <input class="radio_input" type="radio" value="Poor" id="Poor_location" name="radio_location">
-                    <label class="radio_label" for="Poor_location">Poor</label>
-                </div>
-                <div class="col-6">Room Comfort</div>
-                <div class="col-6 button"> 
-                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_comfort" name="radio_comfort">
-                    <label class="radio_label" for="Excellent_comfort">Excellent</label>
-                    <input class="radio_input" type="radio" value="Fair" id="Fair_comfort" name="radio_comfort">
-                    <label class="radio_label" for="Fair_comfort">Fair</label>
-                    <input class="radio_input" type="radio" value="Good" id="Good_comfort" name="radio_comfort">
-                    <label class="radio_label" for="Good_comfort">Good</label>
-                    <input class="radio_input" type="radio" value="Poor" id="Poor_comfort" name="radio_comfort">
-                    <label class="radio_label" for="Poor_comfort">Poor</label>
-                </div>
-                <div class="col-6">Room Cleanliness</div>
-                <div class="col-6 button"> 
-                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_cleanliness" name="radio_cleanliness">
-                    <label class="radio_label" for="Excellent_cleanliness">Excellent</label>
-                    <input class="radio_input" type="radio" value="Fair" id="Fair_cleanliness" name="radio_cleanliness">
-                    <label class="radio_label" for="Fair_cleanliness">Fair</label>
-                    <input class="radio_input" type="radio" value="Good" id="Good_cleanliness" name="radio_cleanliness">
-                    <label class="radio_label" for="Good_cleanliness">Good</label>
-                    <input class="radio_input" type="radio" value="Poor" id="Poor_cleanliness" name="radio_cleanliness">
-                    <label class="radio_label" for="Poor_cleanliness">Poor</label>
-                </div>
-                <div class="col-6">Hotel Condition</div>
-                <div class="col-6 button"> 
-                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_condition" name="radio_condition">
-                    <label class="radio_label" for="Excellent_condition">Excellent</label>
-                    <input class="radio_input" type="radio" value="Fair" id="fair_condition" name="radio_condition">
-                    <label class="radio_label" for="fair_condition">Fair</label>
-                    <input class="radio_input" type="radio" value="Good" id="Good_condition" name="radio_condition">
-                    <label class="radio_label" for="Good_condition">Good</label>
-                    <input class="radio_input" type="radio" value="Poor" id="Poor_condition" name="radio_condition">
-                    <label class="radio_label" for="Poor_condition">Poor</label>
-                </div>
-                <div class="col-6">Food Dining</div>
-                <div class="col-6 button"> 
-                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_dining" name="radio_dining">
-                    <label class="radio_label" for="Excellent_dining">Excellent</label>
-                    <input class="radio_input" type="radio" value="Fair" id="Fair_dining" name="radio_dining">
-                    <label class="radio_label" for="Fair_dining">Fair</label>
-                    <input class="radio_input" type="radio" value="Good" id="Good_dining" name="radio_dining">
-                    <label class="radio_label" for="Good_dining">Good</label>
-                    <input class="radio_input" type="radio" value="Poor" id="Poor_dining" name="radio_dining">
-                    <label class="radio_label" for="Poor_dining">Poor</label>
-                </div>
-                <div class="col-6">Facilities Pool and Gym</div>
-                <div class="col-6 button"> 
-                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_poolgym" name="radio_poolgym">
-                    <label class="radio_label" for="Excellent_poolgym">Excellent</label>
-                    <input class="radio_input" type="radio" value="Fair" id="Fair_poolgym" name="radio_poolgym">
-                    <label class="radio_label" for="Fair_poolgym">Fair</label>
-                    <input class="radio_input" type="radio" value="Good" id="Good_poolgym" name="radio_poolgym">
-                    <label class="radio_label" for="Good_poolgym">Good</label>
-                    <input class="radio_input" type="radio" value="Poor" id="Poor_poolgym" name="radio_poolgym">
-                    <label class="radio_label" for="Poor_poolgym">Poor</label>
-                </div>
-                <div class="col-6">Value for money</div>
-                <div class="col-6 button"> 
-                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_valuemoney" name="radio_valuemoney">
-                    <label class="radio_label" for="Excellent_valuemoney">Excellent</label>
-                    <input class="radio_input" type="radio" value="Fair" id="Fair_valuemoney" name="radio_valuemoney">
-                    <label class="radio_label" for="Fair_valuemoney">Fair</label>
-                    <input class="radio_input" type="radio" value="Good" id="Good_valuemoney" name="radio_valuemoney">
-                    <label class="radio_label" for="Good_valuemoney">Good</label>
-                    <input class="radio_input" type="radio" value="Poor" id="Poor_valuemoney" name="radio_valuemoney">
-                    <label class="radio_label" for="Poor_valuemoney">Poor</label>
-                </div>
-                <div class="col-6">Ambience</div>
-                <div class="col-6 button"> 
-                    <input class="radio_input" type="radio" value="Excellent" id="Excellent_ambience" name="radio_ambience">
-                    <label class="radio_label" for="Excellent_ambience">Excellent</label>
-                    <input class="radio_input" type="radio" value="Fair" id="Fair_ambience" name="radio_ambience">
-                    <label class="radio_label" for="Fair_ambience">Fair</label>
-                    <input class="radio_input" type="radio" value="Good" id="Good_ambience" name="radio_ambience">
-                    <label class="radio_label" for="Good_ambience">Good</label>
-                    <input class="radio_input" type="radio" value="Poor" id="Poor_ambience" name="radio_ambience">
-                    <label class="radio_label" for="Poor_ambience">Poor</label>
-                </div>
+                <div class="questionPart">
+                    <div class="row">
+                        <div class="reccomendedSec">
+                            <p>Would you recommend our hotel to your Family, Friends and relatives?</p>
+                            <input type="radio" name="Facilities" id="Facilities1"><label for="Facilities1">Yes</label>
+                            <input type="radio" name="Facilities" id="Facilities1"><label for="Facilities1">No</label>
+                            <input type="text" name="notRecommended" id="notRecommended" placeholder="Type Here">
+                        </div>
+                        <div class="hotelAssociateSec">
+                            <p>Please recommend Hotels Associate/s for Exceptional Service</p>
+                            <input type="text" name="recomendAssociate" id="recomendAssociate" placeholder="Type Here">
+                        </div>
+                        <div class="addtionalFeedbackSec">
+                            <p>Additional Feedback</p>
+                            <input type="text" name="additionalFeedback" id="additionalFeedback" placeholder="Type Here">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="inviteLink">
+                            <input type="checkbox" id="inviteRequest" name="inviteRequest" value="yes">
+                           <span>May you allow us to send an invite link for your feedback be shared in our Trip Advisor review page?</span>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section>
-                <div class="radio1">
-                    <div class="row">
-                    <h3>Hotel Offers</h3>
-                    <div class="col-6"">Guest rooms</div>
-                    <div class="col-6 button"> 
-                        <input class="radio_input" type="radio" value="Excellent" id="Excellent_guestrooms" name="radio_guestrooms">
-                        <label class="radio_label" for="Excellent_guestrooms">Excellent</label>
-                        <input class="radio_input" type="radio" value="Fair" id="Fair_guestrooms" name="radio_guestrooms">
-                        <label class="radio_label" for="Fair_guestrooms">Fair</label>
-                        <input class="radio_input" type="radio" value="Good" id="Good_guestrooms" name="radio_guestrooms">
-                        <label class="radio_label" for="Good_guestrooms">Good</label>
-                        <input class="radio_input" type="radio" value="Poor" id="Poor_guestrooms" name="radio_guestrooms">
-                        <label class="radio_label" for="Poor_guestrooms">Poor</label>
-                    </div>
-                    <div class="col-6">Function rooms</div>
-                    <div class="col-6 button"> 
-                        <input class="radio_input" type="radio" value="Excellent" id="Excellent_functionrooms" name="radio_functionroomsman">
-                        <label class="radio_label" for="Excellent_functionrooms">Excellent</label>
-                        <input class="radio_input" type="radio" value="Fair" id="Fair_functionrooms" name="radio_functionroomsman">
-                        <label class="radio_label" for="Fair_functionrooms">Fair</label>
-                        <input class="radio_input" type="radio" value="Good" id="Good_functionrooms" name="radio_functionroomsman">
-                        <label class="radio_label" for="Good_functionrooms">Good</label>
-                        <input class="radio_input" type="radio" value="Poor" id="Poor_functionrooms" name="radio_functionroomsman">
-                        <label class="radio_label" for="Poor_functionrooms">Poor</label>
-                    </div>
-                    <div class="col-6">Restroom</div>
-                    <div class="col-6 button"> 
-                        <input class="radio_input" type="radio" value="Excellent" id="Excellent_restroom" name="radio_restroom">
-                        <label class="radio_label" for="Excellent_restroom">Excellent</label>
-                        <input class="radio_input" type="radio" value="Fair" id="Fair_restroom" name="radio_restroom">
-                        <label class="radio_label" for="Fair_restroom">Fair</label>
-                        <input class="radio_input" type="radio" value="Good" id="Good_restroom" name="radio_restroom">
-                        <label class="radio_label" for="Good_restroom">Good</label>
-                        <input class="radio_input" type="radio" value="Poor" id="Poor_restroom" name="radio_restroom">
-                        <label class="radio_label" for="Poor_restroom">Poor</label>
-                    </div>
-                    <div class="col-6">Strand Cafe</div>
-                    <div class="col-6 button"> 
-                        <input class="radio_input" type="radio" value="Excellent" id="Excellent_strand" name="radio_strand">
-                        <label class="radio_label" for="Excellent_strand">Excellent</label>
-                        <input class="radio_input" type="radio" value="Fair" id="Fair_strand" name="radio_strand">
-                        <label class="radio_label" for="Fair_strand">Fair</label>
-                        <input class="radio_input" type="radio" value="Good" id="Good_strand" name="radio_strand">
-                        <label class="radio_label" for="Good_strand">Good</label>
-                        <input class="radio_input" type="radio" value="Poor" id="Poor_strand" name="radio_strand">
-                        <label class="radio_label" for="Poor_strand">Poor</label>
-                    </div>
-                    <div class="col-6">Gym Facilities</div>
-                    <div class="col-6 button"> 
-                        <input class="radio_input" type="radio" value="Excellent" id="Excellent_gymfac" name="radio_gymfac">
-                        <label class="radio_label" for="Excellent_gymfac">Excellent</label>
-                        <input class="radio_input" type="radio" value="Fair" id="Fair_gymfac" name="radio_gymfac">
-                        <label class="radio_label" for="Fair_gymfac">Fair</label>
-                        <input class="radio_input" type="radio" value="Good" id="Good_gymfac" name="radio_gymfac">
-                        <label class="radio_label" for="Good_gymfac">Good</label>
-                        <input class="radio_input" type="radio" value="Poor" id="Poor_gymfac" name="radio_gymfac">
-                        <label class="radio_label" for="Poor_gymfac">Poor</label>
-                    </div>
-                    <div class="col-6">Lap Pool</div>
-                    <div class="col-6 button"> 
-                        <input class="radio_input" type="radio" value="Excellent" id="Excellent_lappool" name="radio_lappool">
-                        <label class="radio_label" for="Excellent_lappool">Excellent</label>
-                        <input class="radio_input" type="radio" value="Fair" id="fair_lappool" name="radio_lappool">
-                        <label class="radio_label" for="fair_lappool">Fair</label>
-                        <input class="radio_input" type="radio" value="Good" id="Good_lappool" name="radio_lappool">
-                        <label class="radio_label" for="Good_lappool">Good</label>
-                        <input class="radio_input" type="radio" value="Poor" id="Poor_lappool" name="radio_lappool">
-                        <label class="radio_label" for="Poor_lappool">Poor</label>
-                    </div>
-                    </div>
-                </section>
-                <section>
-                <div class="radio1">
-        <div class="row">
-            <h3>Restaurant / Room Service</h3>
-            <div class="col-6">Ambience</div>
-            <div class="col-6 button"> 
-                <input class="radio_input" type="radio" value="Excellent" id="Excellent_rrambience" name="radio_rrambience">
-                <label class="radio_label" for="Excellent_rrambience">Excellent</label>
-                <input class="radio_input" type="radio" value="Fair" id="Fair_rrambience" name="radio_rrambience">
-                <label class="radio_label" for="Fair_rrambience">Fair</label>
-                <input class="radio_input" type="radio" value="Good" id="Good_rrambience" name="radio_rrambience">
-                <label class="radio_label" for="Good_rrambience">Good</label>
-                <input class="radio_input" type="radio" value="Poor" id="Poor_rrambience" name="radio_rrambience">
-                <label class="radio_label" for="Poor_rrambience">Poor</label>
-            </div>
-            <div class="col-6">Food presentation</div>
-            <div class="col-6 button"> 
-                <input class="radio_input" type="radio" value="Excellent" id="Excellent_rrpresentation" name="radio_rrpresentation">
-                <label class="radio_label" for="Excellent_rrpresentation">Excellent</label>
-                <input class="radio_input" type="radio" value="Fair" id="Fair_rrpresentation" name="radio_rrpresentation">
-                <label class="radio_label" for="Fair_rrpresentation">Fair</label>
-                <input class="radio_input" type="radio" value="Good" id="Good_rrpresentation" name="radio_rrpresentation">
-                <label class="radio_label" for="Good_rrpresentation">Good</label>
-                <input class="radio_input" type="radio" value="Poor" id="Poor_rrpresentation" name="radio_rrpresentation">
-                <label class="radio_label" for="Poor_rrpresentation">Poor</label>
-            </div>
-            <div class="col-6">Food Quality and Taste</div>
-            <div class="col-6 button"> 
-                <input class="radio_input" type="radio" value="Excellent" id="Excellent_rrfoodquality" name="radio_rrfoodquality">
-                <label class="radio_label" for="Excellent_rrfoodquality">Excellent</label>
-                <input class="radio_input" type="radio" value="Fair" id="Fair_rrfoodquality" name="radio_rrfoodquality">
-                <label class="radio_label" for="Fair_rrfoodquality">Fair</label>
-                <input class="radio_input" type="radio" value="Good" id="Good_rrfoodquality" name="radio_rrfoodquality">
-                <label class="radio_label" for="Good_rrfoodquality">Good</label>
-                <input class="radio_input" type="radio" value="Poor" id="Poor_rrfoodquality" name="radio_rrfoodquality">
-                <label class="radio_label" for="Poor_rrfoodquality">Poor</label>
-            </div>
-            <div class="col-6">Portion Size</div>
-            <div class="col-6 button"> 
-                <input class="radio_input" type="radio" value="Excellent" id="Excellent_rrfoodpresent" name="radio_rrfoodpresent">
-                <label class="radio_label" for="Excellent_rrfoodpresent">Excellent</label>
-                <input class="radio_input" type="radio" value="Fair" id="Fair_rrfoodpresent" name="radio_rrfoodpresent">
-                <label class="radio_label" for="Fair_rrfoodpresent">Fair</label>
-                <input class="radio_input" type="radio" value="Good" id="Good_rrfoodpresent" name="radio_rrfoodpresent">
-                <label class="radio_label" for="Good_rrfoodpresent">Good</label>
-                <input class="radio_input" type="radio" value="Poor" id="Poor_rrfoodpresent" name="radio_rrfoodpresent">
-                <label class="radio_label" for="Poor_rrfoodpresent">Poorasdasd</label>
-            </div>
-            <div class="col-6">Promptness of Service</div>
-            <div class="col-6 button"> 
-                <input class="radio_input" type="radio" value="Excellent" id="Excellent_rrpromptservice" name="radio_rrpromptservice">
-                <label class="radio_label" for="Excellent_rrpromptservice">Excellent</label>
-                <input class="radio_input" type="radio" value="Fair" id="Fair_rrpromptservice" name="radio_rrpromptservice">
-                <label class="radio_label" for="Fair_rrpromptservice">Fair</label>
-                <input class="radio_input" type="radio" value="Good" id="Good_rrpromptservice" name="radio_rrpromptservice">
-                <label class="radio_label" for="Good_rrpromptservice">Good</label>
-                <input class="radio_input" type="radio" value="Poor" id="Poor_rrpromptservice" name="radio_rrpromptservice">
-                <label class="radio_label" for="Poor_rrpromptservice">Poor</label>
-            </div>
-            <div class="col-6">Courtesy of Restaurant</div>
-            <div class="col-6 button"> 
-                <input class="radio_input" type="radio" value="Excellent" id="Excellent_rrcourtesy" name="radio_rrcourtesy">
-                <label class="radio_label" for="Excellent_rrcourtesy">Excellent</label>
-                <input class="radio_input" type="radio" value="Fair" id="fair_rrcourtesy" name="radio_rrcourtesy">
-                <label class="radio_label" for="fair_rrcourtesy">Fair</label>
-                <input class="radio_input" type="radio" value="Good" id="Good_rrcourtesy" name="radio_rrcourtesy">
-                <label class="radio_label" for="Good_rrcourtesy">Good</label>
-                <input class="radio_input" type="radio" value="Poor" id="Poor_rrcourtesy" name="radio_rrcourtesy">
-                <label class="radio_label" for="Poor_rrcourtesy">Poor</label>
-            </div>
-            <div class="col-6">Associates</div>
-            <div class="col-6 button"> 
-                <input class="radio_input" type="radio" value="Excellent" id="Excellent_rrassociates" name="radio_rrassociates">
-                <label class="radio_label" for="Excellent_rrassociates">Excellent</label>
-                <input class="radio_input" type="radio" value="Fair" id="Fair_rrassociates" name="radio_rrassociates">
-                <label class="radio_label" for="Fair_rrassociates">Fair</label>
-                <input class="radio_input" type="radio" value="Good" id="Good_rrassociates" name="radio_rrassociates">
-                <label class="radio_label" for="Good_rrassociates">Good</label>
-                <input class="radio_input" type="radio" value="Poor" id="Poor_rrassociates" name="radio_rrassociates">
-                <label class="radio_label" for="Poor_rrassociates">Poor</label>
-            </div>
         </div>
-    </section>
-</div>
-
-
-    <input type="submit" name="submitButton">
+    <!-- <script src="script.js"></script> -->
     <script type="text/javascript" src="bootstrap.min."></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>

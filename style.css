@@ -1,86 +1,131 @@
 body {
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-image {
   position: relative;
-  height: 300px;
   overflow: hidden;
-  background: url(img/hero2.png) no-repeat center;
+  background: url(/img/HeroTest.jpg) no-repeat center;
   background-size: cover;
 }
 
-.greet {
-  text-align: right;
-}
-h1 {
-  color: white;
-  text-align: left;
-}
-h3 {
-  color: #2a2f2a;
-}
-p {
-  color: black;
-  text-align: left;
-  font-size: 13px;
+.btns {
+  margin-top: 25px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  background: #1e90ff;
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
 }
 
-.radio_input {
+.btns:hover,
+btns:focus,
+.btn:active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.textTitle {
+  padding: 30px;
+  color: azure;
+  text-align: left;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.dateButton {
+  justify-content: center;
+  text-align: center;
+}
+
+.dateOfStay {
+  justify-content: center;
+}
+
+#guestRoomNumber {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.steps label {
+  display: inline-block;
+  width: 33px;
+  position: relative;
+  cursor: pointer;
+}
+
+.steps label:before {
+  content: "\f006";
+  font-family: fontAwesome;
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  top: 0;
+  left: 0;
+  color: #a4a4a4;
+}
+
+.steps input {
   display: none;
 }
-
-.gymAttendant {
-  color: aqua;
+.steps label:after {
+  content: "\f005";
+  font-family: fontAwesome;
+  position: absolute;
+  display: inline-block;
+  font-size: 25px;
+  top: 0;
+  left: 0;
+  color: #005cc8;
+  opacity: 0;
 }
 
-.radio {
-  display: inline-flex;
-  overflow: hidden;
-  padding: 2px 2px;
+.steps label:hover:after,
+.steps label:hover ~ label:after,
+.steps input:checked ~ label:after {
+  opacity: 1;
 }
 
-.radio_label {
-  padding: 8px 14px;
-  font-size: 14px;
-  font-family: sans-serif;
-  color: #ffffff;
-  background: #61513a;
-  cursor: pointer;
-  transition: background 0.1s;
-}
-.radio_label:not(:last-of-type) {
-  border-right: 1px solid #342c1e;
+section {
+  width: 100%;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
 }
 
-.radio_input:checked + .radio_label {
-  background: #342c1e;
-}
+/* .step {
+  display: none;
+} */
 
-@media screen and (max-width: 450px) {
-  body {
-    margin: 0px;
-    padding: 0px;
-  }
-  .hero-sec {
-    width: 100%;
-  }
-  .hero-sec {
-    margin-top: 25%;
-  }
-  .headTitle {
-    text-align: center;
-    color: white;
-    font-size: 26px;
-    padding: 3px;
-  }
-  .hero-image {
-    height: 230px;
-  }
+/* .step.active {
+  display: block;
+} */
 
-  .bodyForm {
+/* .bodyForm {
+  width: 100%;
+  margin-top: 20px;
+} */
+/* 
+.bodyForm input {
+  width: 100%;
+  padding: 5px;
+} */
+
+@media (max-width: 480px) {
+  .body {
+    overflow: hidden;
     align-items: center;
   }
 }
