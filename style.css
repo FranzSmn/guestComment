@@ -48,15 +48,16 @@ btns:focus,
 .des {
   font-size: 14px;
   text-align: center;
+  display: none;
 }
 
 h3 {
   padding: 0 0 10px 0;
-  color: #848482;
+  color: #696969;
 }
 
 .catg {
-  color: #808080;
+  color: #696969;
 }
 .bodyForm {
   padding: 0px 40px 0px;
@@ -71,6 +72,7 @@ h3 {
 .dateOfStay {
   padding: 40px;
   text-align: center;
+  color: #696969;
 }
 
 #guestRoomNumber {
@@ -148,6 +150,23 @@ section {
   padding: 5px;
 } */
 
+.questionPart {
+  text-align: left;
+  color: #696969;
+}
+
+.questPart {
+  padding: 0 0 30px 0;
+}
+
+.inviteLink {
+  text-align: center;
+  padding: 20px 0 30px 0;
+}
+
+span {
+  width: 20px;
+}
 @media only screen and (max-width: 480px) {
   .body {
     overflow: hidden;
@@ -161,7 +180,7 @@ section {
   .catg {
     text-align: left;
     position: relative;
-    top: 10px;
+    top: 5px;
   }
 
   .des {
