@@ -50,6 +50,14 @@ btns:focus,
   text-align: center;
 }
 
+h3 {
+  padding: 0 0 10px 0;
+  color: #848482;
+}
+
+.catg {
+  color: #808080;
+}
 .bodyForm {
   padding: 0px 40px 0px;
   text-align: center;
@@ -70,6 +78,10 @@ btns:focus,
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+.steps {
+  padding: 0 0 45px 0;
+}
 .steps label {
   display: inline-block;
   width: 33px;
@@ -85,6 +97,7 @@ btns:focus,
   font-size: 24px;
   top: 0;
   left: 0;
+  width: 30px;
   color: #a4a4a4;
 }
 
@@ -99,6 +112,7 @@ btns:focus,
   font-size: 25px;
   top: 0;
   left: 0;
+  width: 30px;
   color: #005cc8;
   opacity: 0;
 }
@@ -146,6 +160,8 @@ section {
 
   .catg {
     text-align: left;
+    position: relative;
+    top: 10px;
   }
 
   .des {
