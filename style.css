@@ -95,9 +95,10 @@ h3 {
 }
 .steps label {
   display: inline-block;
-  width: 33px;
   position: relative;
   cursor: pointer;
+  float: right;
+  font-size: 25px;
 }
 
 .steps label:before {
@@ -105,11 +106,10 @@ h3 {
   font-family: fontAwesome;
   position: relative;
   display: inline-block;
-  font-size: 32px;
   top: 0;
   left: 0;
-  width: 45px;
   color: #a4a4a4;
+  width: 50px;
 }
 
 .steps input {
@@ -120,12 +120,11 @@ h3 {
   font-family: fontAwesome;
   position: absolute;
   display: inline-block;
-  font-size: 32px;
   top: 0;
   left: 0;
-  width: 45px;
   color: #005cc8;
   opacity: 0;
+  width: 50px;
 }
 
 .steps label:hover:after,
@@ -173,7 +172,7 @@ h3 {
   }
 
   .steps label {
-    width: 30px;
+    width: 33px;
   }
 
   .catg {
