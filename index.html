@@ -22,7 +22,6 @@
                     your time to fill up the form
                 </p>
             </div>
-            <button type="button" class="btns">Take Survey</button>
         </div>
         
     </div>
@@ -34,9 +33,9 @@
                 <div class="row">
                     <h5 class="fromDate col-6">From:</h5>
                     <h5 class="toDate col-6">To:</h5>
-                    <input class="dateButton col-6" type="date" id="dateStayFrom"/>
-                    <input class="dateButton col-6" type="date" id="dateStayTo"/>
-                    <input class="dateButton" type="number" min="1901" max="3912" id="guestRoomNumber" placeholder="Room Number">
+                    <input class="dateButton col-6" type="date" name="dateFrom" id="dateStayFrom"/>
+                    <input class="dateButton col-6" type="date" name="dateTo"id="dateStayTo"/>
+                    <input class="dateButton" type="number" name="roomNo" min="1901" max="3912" id="guestRoomNumber" placeholder="Room Number">
                 </div>
             </div>
         </div>
@@ -437,22 +436,24 @@
                     <div class="row">
                         <div class="reccomendedSec questPart">
                             <p>Would you recommend our hotel to your Family, Friends and relatives?</p>
-                            <input type="radio" name="Facilities" id="Facilities1"><label for="Facilities1">Yes</label>
-                            <input type="radio" name="Facilities" id="Facilities1"><label for="Facilities1">No</label>
-                            <input type="text" name="notRecommended" id="notRecommended" placeholder="Type Here">
+                            <input type="radio" name="radio39" id="Facilities1"><label for="Facilities1">Yes</label>
+                            <input type="radio" name="radio39" id="Facilities1"><label for="Facilities1">No</label>
+                            <br>
+
+                            <input class="textForm" type="text" name="notRecommended" id="notRecommended" placeholder="If no, why?">
                         </div>
                         <div class="hotelAssociateSec questPart">
                             <p>Please recommend Hotels Associate/s for Exceptional Service</p>
-                            <input type="text" name="recomendAssociate" id="recomendAssociate" placeholder="Type Here">
+                            <input class="textForm" type="text" name="recomendAssociate" id="recomendAssociate" placeholder="Type Here">
                         </div>
                         <div class="addtionalFeedbackSec questPart">
                             <p>Additional Feedback</p>
-                            <input type="text" name="additionalFeedback" id="additionalFeedback" placeholder="Type Here">
+                            <input class="textForm" type="text" name="additionalFeedback" id="additionalFeedback" placeholder="Type Here">
                         </div>
                     </div>
                     <div class="row">
                         <div class="inviteLink">
-                            <input type="checkbox" id="inviteRequest" name="inviteRequest" value="yes">
+                            <input type="radio" name="radio40" id="invite1" value="yes"><label for="invite1"></label>
                            <span>May you allow us to send an invite link for your feedback be shared in our Trip Advisor review page?</span>
                         </div>
                     </div>

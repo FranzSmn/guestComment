@@ -10,6 +10,9 @@
 <body>
     <%
 
+    dateTo = Request.From("dateTo")
+    dateFrom = Request.From("dateFrom")
+    roomNo = Request.From("roomNo")
     radio1 = Request.Form("Radio1")
     radio2 = Request.Form("Radio2")
     radio3 = Request.Form("Radio3")
@@ -48,6 +51,15 @@
     radio36= Request.Form("Radio36")
     radio37= Request.Form("Radio37")
     radio38= Request.Form("Radio38")
+    radio39= Request.Form("Radio39")
+    radio40= Request.Form("Radio40")
+    notRecommended= Request.Form("notRecommended")
+    recomendAssociate= Request.Form("recomendAssociate")
+    additionalFeedback= Request.Form("additionalFeedback")
+    
+
+
+
 
 
 

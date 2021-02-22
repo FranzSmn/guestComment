@@ -227,6 +227,11 @@ h3 {
     align-items: center;
   }
 
+  .textForm {
+    padding: 8px;
+    width: 100%;
+  }
+
   .steps label {
     width: 33px;
   }
